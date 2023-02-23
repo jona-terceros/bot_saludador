@@ -1,14 +1,22 @@
 <html>
   <body>
     <h1>BOT SALUDADOR</h1>
-
+    
     <form id="saludar">
       
       <hl>Tu nombre:</hl>
       <input type="text" id="nombre">
-      <input type="submit" value="saludar" id="saludar-button" />
+      <hl>Tu sexo:</hl>
+      <select id="box">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+      </select>
+      <!-- <hl>Tu edad:</hl>
+      <input type="number" id="edad"> -->
+      <input type="submit" value="Saludar" id="saludar-button" />
+      <div id="saludador"></div>
     </form>
     <script type="module" src="./src/presenter.js"></script>
-    <div id="resultado-div"></div>
+
   </body>
 </html>
